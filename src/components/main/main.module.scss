@@ -1,19 +1,40 @@
-// @media screen and (min-width: 768px)
 .container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 1rem;
+	@media screen and (min-width: 768px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 300px;
+	}
+}
+.picture {
+	@media screen and (min-width: 768px) {
+		grid-column: 1/3;
+	}
 }
 .image {
 	width: 100%;
 	height: 300px;
+	@media screen and (min-width: 768px) {
+		width: 730px;
+	}
 }
 .title {
 	font-weight: 800;
 	font-size: 40px;
 	line-height: 40px;
-	margin-bottom: 15spx;
+	margin-bottom: 15px;
+	@media screen and (min-width: 768px) {
+		grid-column: 1/2;
+		font-size: 56px;
+		line-height: 56px;
+		margin-top: 0;
+	}
+}
+.description {
+	grid-row: 2/3;
 }
 .text {
 	margin-top: 0;
@@ -44,6 +65,11 @@
 	padding-top: 24px;
 	padding-right: 21px;
 	padding-left: 21px;
+	@media screen and (min-width: 768px) {
+		height: 511px;
+		grid-column: 3/4;
+		grid-row: 1/2;
+	}
 }
 .titleNew {
 	margin-top: 0;
@@ -51,4 +77,18 @@
 	font-size: 32px;
 	line-height: 32px;
 	color: #e9aa52;
+}
+.new {
+	position: relative;
+}
+.new::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: #5e607a;
+	bottom: 20px;
+}
+.new:nth-child(4)::before {
+	display: none;
 }

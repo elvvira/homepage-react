@@ -1,4 +1,3 @@
-// @media screen and (min-width: 768px)
 .container {
 	display: flex;
 	align-items: center;
@@ -25,6 +24,9 @@
 	font-size: 18px;
 	margin-bottom: 0;
 	color: #00001a;
+}
+.title:hover {
+	color: #f15d51;
 }
 .text {
 	margin-top: 5px;

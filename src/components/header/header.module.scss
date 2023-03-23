@@ -1,6 +1,71 @@
-// @media screen and (min-width: 768px) 
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media screen and (min-width: 768px) {
+	}
+}
+.icon {
+	display: block;
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+.menu {
+	position: relative;
+}
+.nav {
+	display: none;
+	width: 256px;
+	height: 100vh;
+	position: absolute;
+	flex-direction: column;
+	right: 0;
+
+	@media screen and (min-width: 768px) {
+		position: relative;
+		height: 10px;
+		width: 431px;
+		font-size: 15px;
+		color: #5e607a;
+	}
+}
+.nav--show {
+	display: block;
+	background-color: #fff;
+	z-index: 10;
+}
+// .nav::before {
+// 	background-color: transparent;
+// 	@media screen and (min-width: 768px) {
+// 		content: '';
+// 		position: absolute;
+// 		width: 100vw;
+// 		height: 100vh;
+// 		background-color: black;
+// 		opacity: 0.5;
+// 	}
+// }
+
+.ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	width: 203px;
+	height: 216px;
+	position: relative;
+	top: 100px;
+	left: 30px;
+	@media screen and (min-width: 768px) {
+		width: 431px;
+		height: 26px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+}
+a:hover {
+	color: #f15d51;
 }
