@@ -1,0 +1,33 @@
+// @media screen and (min-width: 768px)
+.container {
+	color: #fffdfa;
+	width: 302px;
+}
+.title {
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 24px;
+}
+.text {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 26px;
+	color: #c5c6ce;
+	position: relative;
+}
+.text::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: #5e607a;
+	bottom: -20px;
+}
+.text::before:nth-child(3) {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: red;
+	bottom: -20px;
+}

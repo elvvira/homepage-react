@@ -1,0 +1,54 @@
+// @media screen and (min-width: 768px)
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+}
+.image {
+	width: 100%;
+	height: 300px;
+}
+.title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 40px;
+	margin-bottom: 15spx;
+}
+.text {
+	margin-top: 0;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 26px;
+	color: #5e607a;
+}
+.button {
+	width: 185px;
+	height: 48px;
+	background: #f15d51;
+	border: transparent;
+	color: white;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 4.375px;
+	margin-bottom: 30px;
+}
+.news {
+	width: 100%;
+	height: 489px;
+	background: #00001a;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	box-sizing: border-box;
+	padding-top: 24px;
+	padding-right: 21px;
+	padding-left: 21px;
+}
+.titleNew {
+	margin-top: 0;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 32px;
+	color: #e9aa52;
+}
