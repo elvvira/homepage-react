@@ -17,13 +17,9 @@
 }
 .nav {
 	display: none;
-	width: 256px;
-	height: 100vh;
-	position: absolute;
-	flex-direction: column;
-	right: 0;
 
 	@media screen and (min-width: 768px) {
+		display: block;
 		position: relative;
 		height: 10px;
 		width: 431px;
@@ -33,20 +29,28 @@
 }
 .nav--show {
 	display: block;
+	width: 256px;
+	height: 100vh;
+	position: absolute;
+	flex-direction: column;
+	right: 0;
 	background-color: #fff;
 	z-index: 10;
 }
-// .nav::before {
-// 	background-color: transparent;
-// 	@media screen and (min-width: 768px) {
-// 		content: '';
-// 		position: absolute;
-// 		width: 100vw;
-// 		height: 100vh;
-// 		background-color: black;
-// 		opacity: 0.5;
-// 	}
-// }
+.nav--show::before {
+	content: '';
+	position: absolute;
+	top: -60px;
+	left: -200px;
+	width: 200px;
+	height: 800px;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 100;
+	@media screen and (min-width: 768px) {
+		background-color: transparent;
+	}
+}
 
 .ul {
 	display: flex;
@@ -60,6 +64,8 @@
 	@media screen and (min-width: 768px) {
 		width: 431px;
 		height: 26px;
+		top: 0;
+		left: -10px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
